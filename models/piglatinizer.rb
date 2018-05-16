@@ -8,7 +8,7 @@ class PigLatinizer
 
   def piglagtinize_word(word)
     match = word.match(/^((?:qu|[bcdfghjklmnpqrstvwxz])*)(.*)$/)
-    match ? match[2] + match[1] + "way" : word
+    match ? match[2] + match[1] + "ay" : word + "way"
   end
 
   def piglatinize(phrase)
