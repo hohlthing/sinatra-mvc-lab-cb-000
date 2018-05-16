@@ -2,7 +2,7 @@
 class PigLatinizer
 
   def piglagtinize_word(word)
-    if word =~ /^[aAeEiIoOuU]/
+    if word.downcase =~ /^[aeiou]/
       word + "way"
     else
       match = word.match(/^((?:qu|[bcdfghjklmnpqrstvwxz])*)(.*)$/)
