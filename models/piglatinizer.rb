@@ -5,7 +5,7 @@ class PigLatinizer
     if word[0] =~ /[aAeEiIoOuU]/
       word + "way"
     else
-      match = word.match(/^((?:qu|[bcdfghjklmnpqrstvwxz])*)(.*)$/)
+      match = word.match(/^((?:qu|[bcdfgjklmnpqrstvwxz])*)(.*)$/)
       match ? match[2] + match[1] + "ay" : word
     end
   end
