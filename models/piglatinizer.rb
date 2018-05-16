@@ -1,10 +1,5 @@
 # Your TextAnalyzer model code will go here.
 class PigLatinizer
-  attr_reader :text
-
-  # def initialize(phrase)
-  #   @text = phrase.downcase
-  # end
 
   def piglagtinize_word(word)
     return word + "way" if word[0] =~ /[aAeEiIoOuU]/
