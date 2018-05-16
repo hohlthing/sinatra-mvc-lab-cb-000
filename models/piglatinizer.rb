@@ -7,7 +7,7 @@ class PigLatinizer
   # end
 
   def piglagtinize_word(word)
-    return word +"way" if word[0] == /[aAeEiIoOuU]/
+    return word +"way" if word[0] =~ /[aAeEiIoOuU]/
     match = word.match(/^((?:qu|[bcdfghjklmnpqrstvwxz])*)(.*)$/)
     match ? match[2] + match[1] + "ay" : word
   end
