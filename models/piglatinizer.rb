@@ -5,7 +5,7 @@ class PigLatinizer
     if word.downcase =~ /^[aeiou]/
       word + "way"
     else
-      match = word.match(/^((?:qu|[bcdfghjklmnpqrstvwxz])*)(.*)$/)
+      match = word.match(/^([bcdfghjklmnpqrstvwxz]*)(.*)$/)
       match ? match[2] + match[1] + "ay" : word
     end
   end
